@@ -57,6 +57,7 @@ To run this project locally, follow these steps:
 ### Justification
 
 - **React**: Chosen for its component-based architecture, making it easier to manage the UI and state.
+- **Tailwind**: For styling.
 - **Material-UI**: Provides pre-styled components, speeding up the development process.
 - **Leaflet**: Offers a powerful and flexible mapping solution.
 - **Chart.js**: Simple yet versatile for creating various types of charts.
