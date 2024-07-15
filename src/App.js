@@ -7,6 +7,7 @@ import Map from "./components/Map";
 import Table from "./components/Table";
 import { sortData, prettyPrintStat } from "./utils/util";
 import LineGraph from "./components/LineGraph";
+import Footer from "./components/Footer";
 import "leaflet/dist/leaflet.css";
 
 function App() {
@@ -71,7 +72,8 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col justify-evenly p-[20px] md:flex-row">
+  <>
+      <div className="flex flex-col justify-evenly p-[20px] md:flex-row">
       <div className="app__left flex-[0.9]">
         <div className="flex justify-between align-middle mb-3">
           <h1 className="font-bold text-xl md:font-extrabold md:text-3xl">
@@ -163,6 +165,8 @@ function App() {
         </CardContent>
       </Card>
     </div>
+    <Footer/>
+    </>
   );
 }
 
