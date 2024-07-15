@@ -4,7 +4,7 @@ This is a COVID-19 Dashboard application built with React, utilizing the disease
 
 ## Live Demo
 
-Check out the live demo of the application [here](https://your-live-demo-url.com).
+Check out the live demo of the application [here](https://vercel.com/eshankhairwars-projects/covid-19-dashboard).
 
 ## Table of Contents
 
@@ -84,7 +84,7 @@ To run this project locally, follow these steps:
 
 ## Deployment
 
-The application is deployed on [Netlify](https://netlify.com) and can be accessed via the following URL: [https://your-live-demo-url.com](https://your-live-demo-url.com).
+The application is deployed on [Vercel](https://vercel.com) and can be accessed via the following URL: [https://vercel.com/eshankhairwars-projects/covid-19-dashboard](https://vercel.com/eshankhairwars-projects/covid-19-dashboard).
 
 ## Contributing
 
