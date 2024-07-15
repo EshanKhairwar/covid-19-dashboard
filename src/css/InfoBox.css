@@ -19,6 +19,7 @@
     font-size: 16px; /* Default title font size */
     font-weight: 500; /* Medium font weight */
     text-align: center; /* Center align title */
+    margin-top:20px;
     margin-bottom: 8px; /* Space below the title */
   }
   
