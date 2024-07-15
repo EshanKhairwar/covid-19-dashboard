@@ -1,0 +1,101 @@
+.map {
+    height: 500px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 16px;
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .map .leaflet-container {
+    height: 100%;
+    border-radius: 12px;
+  }
+  
+  .info-flag img {
+    width: 100px;
+    border-radius: 5px;
+  }
+  
+  .info-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .info-container {
+    width: 150px;
+  }
+  
+  .info-flag {
+    height: 80px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 8px;
+  }
+  
+  .info-confirmed,
+  .info-recovered,
+  .info-deaths {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+.btn {
+    padding: 8px 16px;
+    margin-right: 5px; 
+    background-color: #4681f4; 
+    border: 1px solid #4681f4; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease; 
+    font-size: 16px; 
+    color: white; 
+    text-align: center; 
+    font-weight: bold; 
+    margin-top: 20px;
+}
+
+.btn--active {
+    background-color: #5783db; 
+    border-color: #5783db; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.btn:hover {
+    background-color: #3567d6; 
+    border-color: #3567d6; 
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4); 
+    transform: translateY(-2px); 
+}
+
+.btn:active {
+    background-color: #2a50a1; 
+    border-color: #2a50a1; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(1px); 
+}
+
+
+.btn:last-child {
+    margin-right: 0;
+}
+
+
+@media (max-width: 768px) {
+    .btn {
+        padding: 6px 12px; 
+        font-size: 14px; 
+        margin-right: 4px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 4px 8px; 
+        font-size: 12px; 
+        margin-right: 2px; 
+    }
+}
