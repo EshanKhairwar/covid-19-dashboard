@@ -84,8 +84,8 @@
   }
 
   .infoBox__title {
-    font-size: 8px; /* Even smaller title font size */
-    margin-top: 4px; /* Reduced top margin */
+    font-size: 8px !important; /* Even smaller title font size */
+    margin-top: 4px !important; /* Reduced top margin */
   }
 
   .infoBox__cases {
