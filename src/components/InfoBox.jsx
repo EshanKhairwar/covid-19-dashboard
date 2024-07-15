@@ -8,7 +8,7 @@ const InfoBox = ({title,isRed,cases,active,total,...props}) => {
     className={`infoBox`}>
       <CardContent>
         {/* Title */}
-        <Typography className='infoBox__title' color="textSecondary" gutterBottom>{title}</Typography>
+        <Typography className='infoBox__title mt-2' color="textSecondary" gutterBottom>{title}</Typography>
         {/* number of cases */}
         <h2 className={`infoBox__cases md:text-2xl md:font-bold ${!isRed && "!text-green-300"}`}>{cases}</h2>
 
