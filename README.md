@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# COVID-19 Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a COVID-19 Dashboard application built with React, utilizing the disease.sh API to display various COVID-19 statistics such as total cases, total recovered, total deaths, active cases, new cases, new recovered, and new deaths. The dashboard includes interactive features like a world map and line graphs to visualize the data.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+Check out the live demo of the application [here](https://your-live-demo-url.com).
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Libraries and Tools](#libraries-and-tools)
+- [Challenges](#challenges)
+- [Future Improvements](#future-improvements)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Global and Country-Specific Data**: View COVID-19 statistics for the entire world or select a specific country from the dropdown.
+- **Interactive Map**: Visualize the spread of COVID-19 cases globally with an interactive map.
+- **Line Graphs**: Display historical data of daily new cases, recoveries, and deaths.
+- **Real-time Data**: Fetch and display the latest data using the disease.sh API.
+- **Responsive Design**: The dashboard is responsive and works well on different screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To run this project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/your-username/covid-19-dashboard.git
+    cd covid-19-dashboard
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies**:
+    ```sh
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start the development server**:
+    ```sh
+    npm start
+    ```
 
-### `npm run eject`
+4. Open your browser and navigate to `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Libraries and Tools
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React**: A JavaScript library for building user interfaces.
+- **@mui/material**: Material-UI components for a consistent design.
+- **leaflet**: For creating interactive maps.
+- **chart.js**: For rendering the line graphs.
+- **numeral**: For formatting numbers.
+- **disease.sh API**: Provides COVID-19 data.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Justification
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React**: Chosen for its component-based architecture, making it easier to manage the UI and state.
+- **Material-UI**: Provides pre-styled components, speeding up the development process.
+- **Leaflet**: Offers a powerful and flexible mapping solution.
+- **Chart.js**: Simple yet versatile for creating various types of charts.
+- **Numeral**: Simplifies number formatting.
 
-## Learn More
+## Challenges
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Data Fetching and Handling
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Challenge**: Ensuring accurate and up-to-date data fetching from the disease.sh API.
+- **Solution**: Implemented `useEffect` hooks for fetching data on component mount and when dependencies change. Added error handling to manage API failures gracefully.
 
-### Code Splitting
+### Responsive Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Challenge**: Making the dashboard look good on different screen sizes.
+- **Solution**: Utilized CSS Flexbox and responsive design principles to create a layout that adjusts to various screen sizes. Tested on multiple devices to ensure a consistent experience.
 
-### Analyzing the Bundle Size
+## Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **User Authentication**: Allow users to save their preferences and view personalized data.
+- **Data Export**: Enable users to download the data in CSV or Excel format.
+- **More Visualizations**: Add additional charts and graphs to provide more insights.
+- **Dark Mode**: Implement a dark mode toggle for better accessibility and user preference.
+- **Improved Error Handling**: Enhance error handling to provide more user-friendly messages and retry mechanisms.
 
-### Making a Progressive Web App
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The application is deployed on [Netlify](https://netlify.com) and can be accessed via the following URL: [https://your-live-demo-url.com](https://your-live-demo-url.com).
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
