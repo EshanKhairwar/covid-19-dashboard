@@ -91,6 +91,4 @@ The application is deployed on [Vercel](https://vercel.com) and can be accessed 
 
 Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
