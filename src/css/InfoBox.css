@@ -1,95 +1,98 @@
 /* Base styles for InfoBox */
 .infoBox {
-    background-color: #f9f9f9; /* Light background for the card */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 10px; /* Margin around the card */
-    padding: 16px; /* Padding inside the card */
-    width: 250px; /* Fixed width for consistent size */
-    height: 150px; /* Fixed height for consistent size */
-    display: flex; /* Flexbox to center content */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    cursor: pointer;
-  }
-  
-  /* Title styles */
-  .infoBox__title {
-    font-size: 16px; /* Default title font size */
-    font-weight: 500; /* Medium font weight */
-    text-align: center; /* Center align title */
-    margin-top:20px;
-    margin-bottom: 8px; /* Space below the title */
-  }
-  
-  /* Cases number styles */
-  .infoBox__cases {
-    color: #cc1034;
-    font-size: 20px; /* Default cases font size */
-    font-weight: bold; /* Bold font for cases number */
-    margin: 4px 0; /* Margin above and below the cases number */
-    text-align: center; /* Center align cases number */
+  background-color: #f9f9f9; /* Light background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 10px; /* Margin around the card */
+  padding: 16px; /* Padding inside the card */
+  width: 250px; /* Fixed width for consistent size */
+  height: 150px; /* Fixed height for consistent size */
+  display: flex; /* Flexbox to center content */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  cursor: pointer;
+}
+
+.infoBox--selected {
+  border-top: 10px solid greenyellow; /* Indicate selected box */
+}
+
+/* Title styles */
+.infoBox__title {
+  font-size: 16px; /* Default title font size */
+  margin-top: 20px;
+  font-weight: 500; /* Medium font weight */
+  text-align: center; /* Center align title */
+  margin-bottom: 8px; /* Space below the title */
+}
+
+/* Cases number styles */
+.infoBox__cases {
+  color: #cc1034; /* Red color for cases */
+  font-size: 20px; /* Default cases font size */
+  font-weight: bold; /* Bold font for cases number */
+  margin: 4px 0; /* Margin above and below the cases number */
+  text-align: center; /* Center align cases number */
+}
+
+.infoBox__cases--green {
+  color: greenyellow !important; /* Green color for cases */
+}
+
+/* Total cases styles */
+.infoBox__total {
+  color: #6c757d;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  text-align: center; /* Center align total text */
+}
+
+/* Media queries for responsive design */
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  .infoBox {
+    padding: 12px; /* Smaller padding */
+    margin: 8px; /* Reduced margin */
+    width: 200px; /* Adjust width for tablets */
+    height: 130px; /* Adjust height for tablets */
   }
 
-  infoBox__cases--green{
-    color:greenyellow !important;
+  .infoBox__title {
+    font-size: 12px; /* Smaller title font size */
+    margin-top: 8px; /* Reduced top margin */
   }
-  
-  /* Total cases styles */
+
+  .infoBox__cases {
+    font-size: 18px; /* Smaller cases font size */
+  }
+
   .infoBox__total {
-    color: #6c757d;
-    font-weight: 700 !important;
-    font-size: 0.8rem !important;
-    margin-top: 15px !important;
-    text-align: center; /* Center align total text */
+    font-size: 10px; /* Smaller total font size */
   }
-  
-  /* Media queries for responsive design */
-  
-  /* Medium devices (tablets) */
-  @media (max-width: 768px) {
-    .infoBox {
-       padding: 12px; /*Smaller padding */
-      margin: 8px; /* Reduced margin */
-      width: 200px; /* Adjust width for tablets */
-      height: 130px; /* Adjust height for tablets */
-    }
-  
-    .infoBox__title {
-      font-size: 10px; /* Smaller title font size */
-      padding-top: 2px;
-    }
-  
-    .infoBox__cases {
-      font-size: 18px; /* Smaller cases font size */
-    }
-  
-    .infoBox__total {
-      font-size: 10px; /* Smaller total font size */
-    }
+}
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  .infoBox {
+    padding: 8px; /* Even smaller padding */
+    margin: 6px; /* Further reduced margin */
+    width: 180px; /* Adjust width for phones */
+    height: 120px; /* Adjust height for phones */
   }
-  
-  /* Small devices (phones) */
-  @media (max-width: 480px) {
-    .infoBox {
-      padding: 8px; /* Even smaller padding */
-      margin: 6px; /* Further reduced margin */
-      width: 180px; /* Adjust width for phones */
-      height: 120px; /* Adjust height for phones */
-    }
-  
-    .infoBox__title {
-      font-size: 8px; /* Even smaller title font size */
-      margin-top: 20px;
-    }
-  
-    .infoBox__cases {
-      font-size: 16px; /* Even smaller cases font size */
-    }
-  
-    .infoBox__total {
-      font-size: 8px; /* Even smaller total font size */
-    }
+
+  .infoBox__title {
+    font-size: 8px; /* Even smaller title font size */
+    margin-top: 4px; /* Reduced top margin */
   }
-  
+
+  .infoBox__cases {
+    font-size: 16px; /* Even smaller cases font size */
+  }
+
+  .infoBox__total {
+    font-size: 8px; /* Even smaller total font size */
+  }
+}
